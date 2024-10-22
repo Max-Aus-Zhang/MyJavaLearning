@@ -10,8 +10,8 @@ public class StringDemo8 {
         String s = sc.nextLine();
         char [] chars = s.toCharArray();
         shuffleArray(chars);
-        for (int i = 0; i < chars.length; i++) {
-            System.out.print(chars[i]);
+        for (char aChar : chars) {
+            System.out.print(aChar);
         }
 
     }
