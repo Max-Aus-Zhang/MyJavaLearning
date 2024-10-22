@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaoZhuang/BaoZhuang.iml" filepath="$PROJECT_DIR$/BaoZhuang/BaoZhuang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FanXin/FanXin.iml" filepath="$PROJECT_DIR$/FanXin/FanXin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaWorkShop.iml" filepath="$PROJECT_DIR$/.idea/JavaWorkShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JiHePaiXu/JiHePaiXu.iml" filepath="$PROJECT_DIR$/JiHePaiXu/JiHePaiXu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecRound/SecRound.iml" filepath="$PROJECT_DIR$/SecRound/SecRound.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecRoundLearn/SecRoundLearn.iml" filepath="$PROJECT_DIR$/SecRoundLearn/SecRoundLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecondRoundReview/SecondRoundReview.iml" filepath="$PROJECT_DIR$/SecondRoundReview/SecondRoundReview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaoZhuang/com.max.finalwork/com.max.finalwork.iml" filepath="$PROJECT_DIR$/BaoZhuang/com.max.finalwork/com.max.finalwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaoZhuang/com.max.map/com.max.map.iml" filepath="$PROJECT_DIR$/BaoZhuang/com.max.map/com.max.map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaoZhuang/com.max.set/com.max.set.iml" filepath="$PROJECT_DIR$/BaoZhuang/com.max.set/com.max.set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>

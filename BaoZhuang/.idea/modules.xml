@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaoZhuang.iml" filepath="$PROJECT_DIR$/BaoZhuang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.max.finalwork/com.max.finalwork.iml" filepath="$PROJECT_DIR$/com.max.finalwork/com.max.finalwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.max.map/com.max.map.iml" filepath="$PROJECT_DIR$/com.max.map/com.max.map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.max.set/com.max.set.iml" filepath="$PROJECT_DIR$/com.max.set/com.max.set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.max.work1/com.max.work1.iml" filepath="$PROJECT_DIR$/com.max.work1/com.max.work1.iml" />
+    </modules>
+  </component>
+</project>
