@@ -21,6 +21,6 @@ public class StringDemo11 {
 
         }
         sb.reverse();
-        System.out.println("最后一个单词长度为:"+count+"它现在是"+sb.toString());
+        System.out.println("最后一个单词长度为:"+count+"它现在是在"+sb.toString());
     }
 }
