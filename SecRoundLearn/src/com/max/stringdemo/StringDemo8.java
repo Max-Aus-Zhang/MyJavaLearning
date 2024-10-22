@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class StringDemo8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string");
+        System.out.println("11Enter a string");
         String s = sc.nextLine();
         char [] chars = s.toCharArray();
         shuffleArray(chars);
