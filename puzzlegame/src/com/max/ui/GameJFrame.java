@@ -10,8 +10,11 @@ import java.awt.event.KeyListener;
 import java.util.Random;
 
 
-public class GameJFrame extends JFrame implements KeyListener , ActionListener {
-//  随机数
+public class GameJFrame extends JFrame implements KeyListener, ActionListener {
+    //路径
+    String path = "image\\animal\\animal3\\";
+
+    //  随机数
     Random r = new Random();
     //        创建用于存储的二维数组
     int[][] doubleNums = new int[4][4];
@@ -25,7 +28,7 @@ public class GameJFrame extends JFrame implements KeyListener , ActionListener {
     //    创建接受空白拼图的索引
     int x = 0;
     int y = 0;
-//    步数统计
+    //    步数统计
     int count = 0;
     //        类别里的选项
     JMenuItem reset = new JMenuItem("重新开始");
@@ -88,17 +91,16 @@ public class GameJFrame extends JFrame implements KeyListener , ActionListener {
         this.getContentPane().removeAll();
 
 
-
 //        判断赢了没
-        if(this.passGame()){
+        if (this.passGame()) {
             JLabel win = new JLabel(new ImageIcon("image\\win.png"));
-            win.setBounds(201,281,197,73);
+            win.setBounds(201, 281, 197, 73);
             this.getContentPane().add(win);
             System.out.println("win the game");
         }
 
-JLabel step = new JLabel("步数:"+count);
-        step.setBounds(600,600,100,50);
+        JLabel step = new JLabel("步数:" + count);
+        step.setBounds(600, 600, 100, 50);
         this.getContentPane().add(step);
 
         //        添加图片位置
@@ -108,16 +110,14 @@ JLabel step = new JLabel("步数:"+count);
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 int count = doubleNums[i][j];
-                JLabel jLabel = new JLabel(new ImageIcon("C:\\Users\\Max.Zhang\\Desktop\\JavaWorkShop\\puzzlegame" +
-                        "\\image\\animal" +
-                        "\\animal3\\" + count + ".jpg"));
+                JLabel jLabel = new JLabel(new ImageIcon(path + count + ".jpg"));
 
                 jLabel.setBounds(105 * j + 83, 105 * i + 134, 105, 105);
                 this.getContentPane().add(jLabel);
 //                给图加边框
                 jLabel.setBorder(new BevelBorder(1));
 
-                System.out.print(count+"  ");
+                System.out.print(count + "  ");
             }
         }
         //            美化,添加背景图片
@@ -126,7 +126,6 @@ JLabel step = new JLabel("步数:"+count);
         bg.setBounds(40, 40, 508, 560);
 
         this.getContentPane().add(bg);
-
 
 
 //        可以强制刷新窗口和子组件布局，确保所有内容被正确绘制。
@@ -191,7 +190,6 @@ JLabel step = new JLabel("步数:"+count);
     }
 
 
-
     /*键盘监听方法*/
     @Override
     public void keyTyped(KeyEvent e) {
@@ -202,7 +200,7 @@ JLabel step = new JLabel("步数:"+count);
     @Override
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode();
-        if (passGame()){
+        if (passGame()) {
             return;
         }
         if (code == 65) {
@@ -221,7 +219,7 @@ JLabel step = new JLabel("步数:"+count);
     public void keyReleased(KeyEvent e) {
 
 
-        if (passGame()){
+        if (passGame()) {
             return;
         }
         int code = e.getKeyCode();
@@ -293,8 +291,9 @@ JLabel step = new JLabel("步数:"+count);
         }
 
     }
-//    判断是否成功
-    public boolean passGame (){
+
+    //    判断是否成功
+    public boolean passGame() {
         for (int i = 0; i < doubleNums.length; i++) { // 遍历行
             for (int j = 0; j < doubleNums[i].length; j++) { // 遍历列
                 if (standard[i][j] != doubleNums[i][j]) {
@@ -327,25 +326,33 @@ JLabel step = new JLabel("步数:"+count);
         if (source == publicPage) {
             System.out.println("publicPage");
         }
-        if (source== girl){
+        if (source == girl) {
             System.out.println("girl");
 
 //            随机1到13的数字
-            int num = r.nextInt(12)+1;
-            new ImageIcon();
+            int num = r.nextInt(13) + 1;
+            this.path = "image\\girl\\girl" + num + "\\";
+            this.initNum();
+            this.initImage();
 
-            System.out.println(num);
+
+
         }
         if (source == animal) {
-            int num = r.nextInt(7)+1;
-
-            System.out.println("animal");
+            int num = r.nextInt(8) + 1;
+            this.path = "image\\animal\\animal" + num + "\\";
+            this.initNum();
+            this.initImage();
+            System.out.println("animal" + num);
         }
         if (source == sport) {
+            int num = r.nextInt(10) + 1;
+            this.path = "image\\sport\\sport" + num + "\\";
+            this.initNum();
+            this.initImage();
             System.out.println("sport");
         }
     }
-
 
 
 
